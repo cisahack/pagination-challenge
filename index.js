@@ -16,6 +16,6 @@ app.get("/apps", (req, res) => {
   res.json({ apps: filteredApps });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("server is listening in port 3000");
 });
