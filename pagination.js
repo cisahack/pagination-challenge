@@ -1,6 +1,6 @@
 const apps = require("./app-seed");
 
-const allowedOrders = ["asc", "desc"];
+const filteredOrders = ["asc", "desc"];
 const maxDefault = 50;
 
 function getIndex(by, start) {
@@ -27,7 +27,7 @@ function getIndex(by, start) {
   return value;
 }
 
-function paginateApps(by, start, end, max, order) {
+function paginatedApps(by, start, end, max, order) {
   if (!by) {
     return ['The key "by" is required'];
   }
@@ -58,7 +58,7 @@ function paginateApps(by, start, end, max, order) {
     }
   }
 
-  if (!allowedOrders.includes(order)) {
+  if (!filteredOrders.includes(order)) {
     return filteredApps;
   }
 
@@ -81,4 +81,4 @@ function paginateApps(by, start, end, max, order) {
   return filteredApps;
 }
 
-module.exports = paginateApps;
+module.exports = { getIndex, paginatedApps };
