@@ -3,7 +3,7 @@ const apps = require("./app-seed");
 const filteredOrders = ["asc", "desc"];
 const maxDefault = 50;
 
-function getIndex(by, start) {
+function reqIndex(by, start) {
   let value;
 
   if (by === "id") {
@@ -42,11 +42,11 @@ function paginatedApps(by, start, end, max, order) {
   max = max > maxDefault ? maxDefault : max;
 
   start = start ? start : by === "id" ? 1 : apps[0].name;
-  start = getIndex(by, start);
+  start = reqIndex(by, start);
 
   end = end ? end : by === "id" ? apps.length : apps[apps.length - 1].name;
   end = end || apps.length;
-  end = getIndex(by, end);
+  end = reqIndex(by, end);
 
   const filteredApps = [];
 
@@ -81,4 +81,4 @@ function paginatedApps(by, start, end, max, order) {
   return filteredApps;
 }
 
-module.exports = { getIndex, paginatedApps };
+module.exports = { reqIndex, paginatedApps };

@@ -49,6 +49,16 @@ const apps = [
   { id: 48, name: "my-app-048" },
   { id: 49, name: "my-app-049" },
   { id: 50, name: "my-app-050" },
+  { id: 51, name: "my-app-051" },
+  { id: 52, name: "my-app-052" },
+  { id: 53, name: "my-app-053" },
+  { id: 54, name: "my-app-054" },
+  { id: 55, name: "my-app-055" },
+  { id: 56, name: "my-app-056" },
+  { id: 57, name: "my-app-057" },
+  { id: 58, name: "my-app-058" },
+  { id: 59, name: "my-app-059" },
+  { id: 60, name: "my-app-060" },
 ];
 
 module.exports = apps;
