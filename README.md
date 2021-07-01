@@ -4,7 +4,7 @@
 
 Clone the repository
 
-(https://github.com/cisahack/pagination-challenge.git)
+`https://github.com/cisahack/pagination-challenge.git`
 
 Install the dependencies:
 
@@ -38,7 +38,7 @@ https://pagination-challenge-test.herokuapp.com/apps?by=name&start=my-app-003&en
 
 ## Solution
 
--Technologies used are Express, Node, and Jest.
+- Technologies used are Express, Node, and Jest.
 
 1. I populated the seed data for the array of apps.
 
